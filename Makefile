@@ -161,9 +161,7 @@ DEPENDS	:=	$(OFILES:.o=.d)
 #-------------------------------------------------------------------------------
 all	:	$(OUTPUT).wuhb
 
-$(OUTPUT).wuhb	:	$(OUTPUT).rpx
-$(OUTPUT).rpx	:	$(OUTPUT).elf
-$(OUTPUT).elf	:	$(OFILES)
+$(OUTPUT).wuhb	:	$(OFILES)
 
 $(OFILES_SRC)	: $(HFILES_BIN)
 
