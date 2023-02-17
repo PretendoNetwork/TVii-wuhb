@@ -9,11 +9,11 @@ int main() {
 
 	if (WHBProcIsRunning()) {
 		if (Mocha_InitLibrary() == MOCHA_RESULT_SUCCESS) {
-			if (SYSCheckTitleExists(0x000500301001300A)) { // * JPN
-				_SYSSwitchTo(SYSAPP_PFID_TVII);
-			} else if(SYSCheckTitleExists(0x000500301001310A)) { // * USA
-				_SYSSwitchTo(SYSAPP_PFID_TVII);
-			} else if(SYSCheckTitleExists(0x000500301001320A)) { // * EUR
+			if (
+				SYSCheckTitleExists(0x000500301001300A) || // * JPN
+				SYSCheckTitleExists(0x000500301001310A) || // * USA
+				SYSCheckTitleExists(0x000500301001320A)    // * EUR
+			) {
 				_SYSSwitchTo(SYSAPP_PFID_TVII);
 			} else {
 				OSFatal("Failed to find TVii");
