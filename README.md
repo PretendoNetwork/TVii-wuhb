@@ -1,2 +1,2 @@
-# TVii-wuhb
-Launch TVii from the homescreen using Aroma
+# Nintendo TVii-wuhb
+Launch Nintendo TVii from the Wii U Menu using Aroma
