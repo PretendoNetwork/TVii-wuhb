@@ -15,8 +15,8 @@ TOPDIR ?= $(CURDIR)
 # APP_SHORTNAME sets the short name of the application
 # APP_AUTHOR sets the author of the application
 #-------------------------------------------------------------------------------
-APP_NAME		:= TVii
-APP_SHORTNAME	:= TVii
+APP_NAME		:= Nintendo TVii
+APP_SHORTNAME	:= Nintendo TVii
 APP_AUTHOR		:= Pretendo Devs
 
 include $(DEVKITPRO)/wut/share/wut_rules
